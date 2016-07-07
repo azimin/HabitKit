@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 
 public class HabitKit {
-  static let sharedInstance: HabitKit = {
+  public static let sharedInstance: HabitKit = {
     let value = HabitKit()
     value.realmDataBase = try! Realm()
     return value

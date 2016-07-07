@@ -10,10 +10,15 @@ import Foundation
 import CoreGraphics
 
 public class ActionHabitRule: HabitRule {
-  private var defaultValue: Int = 0
+  
+  public static var cacheSizeGlobal = 50
+  
+  // Number of times must one value execute before selection
+  public var numberOfExecutions = 1
+  public var cacheSize = ActionHabitRule.cacheSizeGlobal
   
   // Recomended value
-  var actionIndex: Int {
+  public var actionIndex: Int {
     let values = ActionHabitRuleEntity.createOrFindEntity(name).values
     
     if values.count < numberOfExecutions {
@@ -24,8 +29,6 @@ public class ActionHabitRule: HabitRule {
     let bestActions = intValues.groupCount({ $0 })
     let sortedBestActions = bestActions.keysSortedByValue(>)
     
-    print(bestActions)
-    
     if sortedBestActions.count == 0 {
       return defaultValue
     } else if sortedBestActions.count == 1 {
@@ -33,38 +36,44 @@ public class ActionHabitRule: HabitRule {
     }
     
     let best = sortedBestActions[0]
-    let bestValue = bestActions[best] ?? 0
-    let sum = bestValue + (bestActions[defaultValue] ?? 0)
+    let bestCount = bestActions[best]!
+    let prebest = sortedBestActions[1]
+    let prebestCount = bestActions[prebest]!
     
-    if CGFloat(bestValue / sum) > executionValue {
-      return best
+    if bestCount == prebestCount {
+      for element in intValues.reverse() {
+        if element == best {
+          return best
+        }
+        
+        if element == prebest {
+          return prebest
+        }
+      }
     }
     
-    return defaultValue
+    return best
   }
   
-  // Number of times must one value execute before selection
-  var numberOfExecutions = 1
+  private var defaultValue: Int = 0
   
-  // Dominant percent of this value from second one
-  var executionValue: CGFloat = 0.5
-  
-  func executeActionIndex(actionIndex: Int) {
-    ActionHabitRuleEntity.execute(name, value: actionIndex)
-  }
-  
-  func executeAction(action: Bool) {
-    ActionHabitRuleEntity.execute(name, value: action ? 1 : 0)
-  }
-  
-  init(name: String, defaultValue: Int) {
+  public init(name: String, defaultValue: Int) {
     self.defaultValue = defaultValue
     super.init(name: name)
   }
   
-  init(name: String, defaultValue: Bool) {
+  public init(name: String, defaultValue: Bool) {
     self.defaultValue = defaultValue ? 1 : 0
     super.init(name: name)
+  }
+  
+  public func executeActionIndex(actionIndex: Int) {
+    let value = ActionHabitRuleEntity.execute(name, value: actionIndex)
+    value.cacheSizeCheck(cacheSize)
+  }
+  
+  public func executeAction(action: Bool) {
+    executeActionIndex(action ? 1 : 0)
   }
 }
 

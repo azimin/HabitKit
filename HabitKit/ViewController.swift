@@ -7,17 +7,19 @@
 //
 
 import UIKit
+import HabitKitFramework
 
 class ViewController: UIViewController {
 
   @IBOutlet weak var segmentedControl: UISegmentedControl!
   var selectionHabit = ActionHabitRule(name: "SelectionHabit", defaultValue: 0)
   
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    
     selectionHabit.numberOfExecutions = 2
-    selectionHabit.executionValue = 0.6
     
     segmentedControl.selectedSegmentIndex = selectionHabit.actionIndex
   }

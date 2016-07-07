@@ -7,22 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C9A87BCB15737F12B47293B /* Pods_HabitKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896233AB84B5EAD22997457D /* Pods_HabitKit.framework */; };
+		7167D234B1FEA78A23A986ED /* Pods_HabitKitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98508CB7E5212ECB9D1FA303 /* Pods_HabitKitFramework.framework */; };
 		9240CBDE1D2EA32B00239B7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBDD1D2EA32B00239B7E /* AppDelegate.swift */; };
 		9240CBE01D2EA32B00239B7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBDF1D2EA32B00239B7E /* ViewController.swift */; };
 		9240CBE31D2EA32B00239B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9240CBE11D2EA32B00239B7E /* Main.storyboard */; };
 		9240CBE51D2EA32B00239B7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9240CBE41D2EA32B00239B7E /* Assets.xcassets */; };
 		9240CBE81D2EA32B00239B7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9240CBE61D2EA32B00239B7E /* LaunchScreen.storyboard */; };
-		9240CBF11D2EA38500239B7E /* HabitRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBF01D2EA38500239B7E /* HabitRule.swift */; };
-		9240CBF31D2EA79900239B7E /* ActionHabitRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBF21D2EA79900239B7E /* ActionHabitRule.swift */; };
-		9240CBF51D2EA7B900239B7E /* HabitKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBF41D2EA7B900239B7E /* HabitKit.swift */; };
-		9240CBF71D2EA86200239B7E /* ActionHabitRuleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBF61D2EA86200239B7E /* ActionHabitRuleEntity.swift */; };
-		9240CBF91D2EA9BF00239B7E /* Realm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBF81D2EA9BF00239B7E /* Realm+Extensions.swift */; };
-		9240CBFB1D2EAC0000239B7E /* Collections+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBFA1D2EAC0000239B7E /* Collections+Extensions.swift */; };
+		9240CC041D2ED21300239B7E /* HabitKitFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9240CC031D2ED21300239B7E /* HabitKitFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9240CC081D2ED21300239B7E /* HabitKitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9240CC011D2ED21300239B7E /* HabitKitFramework.framework */; };
+		9240CC091D2ED21300239B7E /* HabitKitFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9240CC011D2ED21300239B7E /* HabitKitFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9240CC0F1D2ED23C00239B7E /* Realm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBF81D2EA9BF00239B7E /* Realm+Extensions.swift */; };
+		9240CC101D2ED23D00239B7E /* Collections+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBFA1D2EAC0000239B7E /* Collections+Extensions.swift */; };
+		9240CC111D2ED23D00239B7E /* HabitKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBF41D2EA7B900239B7E /* HabitKit.swift */; };
+		9240CC121D2ED23D00239B7E /* HabitRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBF01D2EA38500239B7E /* HabitRule.swift */; };
+		9240CC131D2ED23D00239B7E /* ActionHabitRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBF21D2EA79900239B7E /* ActionHabitRule.swift */; };
+		9240CC141D2ED23D00239B7E /* ActionHabitRuleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9240CBF61D2EA86200239B7E /* ActionHabitRuleEntity.swift */; };
+		A8CD5770328B7C987FDD5D19 /* Pods_HabitKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896233AB84B5EAD22997457D /* Pods_HabitKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9240CC061D2ED21300239B7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9240CBD21D2EA32B00239B7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9240CC001D2ED21300239B7E;
+			remoteInfo = HabitKitFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9240CC0D1D2ED21300239B7E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9240CC091D2ED21300239B7E /* HabitKitFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		019A9BAEE9D92D623810D62B /* Pods-HabitKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabitKit/Pods-HabitKit.debug.xcconfig"; sourceTree = "<group>"; };
+		3DB8329AE98C4F8642BD6164 /* Pods-HabitKitFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitKitFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabitKitFramework/Pods-HabitKitFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		896233AB84B5EAD22997457D /* Pods_HabitKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A046300A7FB81050834155D /* Pods-HabitKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-HabitKit/Pods-HabitKit.release.xcconfig"; sourceTree = "<group>"; };
+		91723CA43D617A311AD70236 /* Pods-HabitKitFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitKitFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-HabitKitFramework/Pods-HabitKitFramework.release.xcconfig"; sourceTree = "<group>"; };
 		9240CBDA1D2EA32B00239B7E /* HabitKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9240CBDD1D2EA32B00239B7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9240CBDF1D2EA32B00239B7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,14 +62,16 @@
 		9240CBE41D2EA32B00239B7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9240CBE71D2EA32B00239B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9240CBE91D2EA32B00239B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9240CBF01D2EA38500239B7E /* HabitRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitRule.swift; sourceTree = "<group>"; };
-		9240CBF21D2EA79900239B7E /* ActionHabitRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionHabitRule.swift; sourceTree = "<group>"; };
-		9240CBF41D2EA7B900239B7E /* HabitKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitKit.swift; sourceTree = "<group>"; };
-		9240CBF61D2EA86200239B7E /* ActionHabitRuleEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionHabitRuleEntity.swift; sourceTree = "<group>"; };
-		9240CBF81D2EA9BF00239B7E /* Realm+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Extensions.swift"; sourceTree = "<group>"; };
-		9240CBFA1D2EAC0000239B7E /* Collections+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collections+Extensions.swift"; sourceTree = "<group>"; };
-		D8352634073DFF81220D76C3 /* Pods-HabitKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HabitKit/Pods-HabitKit.debug.xcconfig"; sourceTree = "<group>"; };
-		FAAE33FD67F198C5E7A0FFCB /* Pods-HabitKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-HabitKit/Pods-HabitKit.release.xcconfig"; sourceTree = "<group>"; };
+		9240CBF01D2EA38500239B7E /* HabitRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HabitRule.swift; path = ../HabitKit/HabitRule.swift; sourceTree = "<group>"; };
+		9240CBF21D2EA79900239B7E /* ActionHabitRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionHabitRule.swift; path = ../HabitKit/ActionHabitRule.swift; sourceTree = "<group>"; };
+		9240CBF41D2EA7B900239B7E /* HabitKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HabitKit.swift; path = ../HabitKit/HabitKit.swift; sourceTree = "<group>"; };
+		9240CBF61D2EA86200239B7E /* ActionHabitRuleEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActionHabitRuleEntity.swift; path = ../HabitKit/ActionHabitRuleEntity.swift; sourceTree = "<group>"; };
+		9240CBF81D2EA9BF00239B7E /* Realm+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Realm+Extensions.swift"; path = "../HabitKit/Realm+Extensions.swift"; sourceTree = "<group>"; };
+		9240CBFA1D2EAC0000239B7E /* Collections+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Collections+Extensions.swift"; path = "../HabitKit/Collections+Extensions.swift"; sourceTree = "<group>"; };
+		9240CC011D2ED21300239B7E /* HabitKitFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HabitKitFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9240CC031D2ED21300239B7E /* HabitKitFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HabitKitFramework.h; sourceTree = "<group>"; };
+		9240CC051D2ED21300239B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98508CB7E5212ECB9D1FA303 /* Pods_HabitKitFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitKitFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +79,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C9A87BCB15737F12B47293B /* Pods_HabitKit.framework in Frameworks */,
+				9240CC081D2ED21300239B7E /* HabitKitFramework.framework in Frameworks */,
+				A8CD5770328B7C987FDD5D19 /* Pods_HabitKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9240CBFD1D2ED21300239B7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7167D234B1FEA78A23A986ED /* Pods_HabitKitFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +98,10 @@
 		50ED61FFE44372935AD6507D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D8352634073DFF81220D76C3 /* Pods-HabitKit.debug.xcconfig */,
-				FAAE33FD67F198C5E7A0FFCB /* Pods-HabitKit.release.xcconfig */,
+				3DB8329AE98C4F8642BD6164 /* Pods-HabitKitFramework.debug.xcconfig */,
+				91723CA43D617A311AD70236 /* Pods-HabitKitFramework.release.xcconfig */,
+				019A9BAEE9D92D623810D62B /* Pods-HabitKit.debug.xcconfig */,
+				8A046300A7FB81050834155D /* Pods-HabitKit.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -65,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				9240CBDC1D2EA32B00239B7E /* HabitKit */,
+				9240CC021D2ED21300239B7E /* HabitKitFramework */,
 				9240CBDB1D2EA32B00239B7E /* Products */,
 				50ED61FFE44372935AD6507D /* Pods */,
 				E43EBEFCCA363B3F5E74929B /* Frameworks */,
@@ -75,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				9240CBDA1D2EA32B00239B7E /* HabitKit.app */,
+				9240CC011D2ED21300239B7E /* HabitKitFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,7 +129,6 @@
 		9240CBDC1D2EA32B00239B7E /* HabitKit */ = {
 			isa = PBXGroup;
 			children = (
-				9240CBEF1D2EA37600239B7E /* Core */,
 				9240CBDD1D2EA32B00239B7E /* AppDelegate.swift */,
 				9240CBDF1D2EA32B00239B7E /* ViewController.swift */,
 				9240CBE11D2EA32B00239B7E /* Main.storyboard */,
@@ -93,7 +139,17 @@
 			path = HabitKit;
 			sourceTree = "<group>";
 		};
-		9240CBEF1D2EA37600239B7E /* Core */ = {
+		9240CC021D2ED21300239B7E /* HabitKitFramework */ = {
+			isa = PBXGroup;
+			children = (
+				9240CC0E1D2ED22C00239B7E /* Core */,
+				9240CC031D2ED21300239B7E /* HabitKitFramework.h */,
+				9240CC051D2ED21300239B7E /* Info.plist */,
+			);
+			path = HabitKitFramework;
+			sourceTree = "<group>";
+		};
+		9240CC0E1D2ED22C00239B7E /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				9240CBF81D2EA9BF00239B7E /* Realm+Extensions.swift */,
@@ -110,32 +166,66 @@
 			isa = PBXGroup;
 			children = (
 				896233AB84B5EAD22997457D /* Pods_HabitKit.framework */,
+				98508CB7E5212ECB9D1FA303 /* Pods_HabitKitFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9240CBFE1D2ED21300239B7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9240CC041D2ED21300239B7E /* HabitKitFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		9240CBD91D2EA32B00239B7E /* HabitKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9240CBEC1D2EA32B00239B7E /* Build configuration list for PBXNativeTarget "HabitKit" */;
 			buildPhases = (
-				08D4869B2D967E08E3566DA8 /* [CP] Check Pods Manifest.lock */,
+				96DC234D474A9342DEBBB05B /* [CP] Check Pods Manifest.lock */,
 				9240CBD61D2EA32B00239B7E /* Sources */,
 				9240CBD71D2EA32B00239B7E /* Frameworks */,
 				9240CBD81D2EA32B00239B7E /* Resources */,
-				1326643FB791D39833B74B31 /* [CP] Embed Pods Frameworks */,
-				A44568E3830E405EF22F13F7 /* [CP] Copy Pods Resources */,
+				9240CC0D1D2ED21300239B7E /* Embed Frameworks */,
+				B371CD52AE6F59811B6777C3 /* [CP] Embed Pods Frameworks */,
+				2D663BF582A2FA2E97198E60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9240CC071D2ED21300239B7E /* PBXTargetDependency */,
 			);
 			name = HabitKit;
 			productName = HabitKit;
 			productReference = 9240CBDA1D2EA32B00239B7E /* HabitKit.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9240CC001D2ED21300239B7E /* HabitKitFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9240CC0C1D2ED21300239B7E /* Build configuration list for PBXNativeTarget "HabitKitFramework" */;
+			buildPhases = (
+				27C9BD9D52434F94B4DEB108 /* [CP] Check Pods Manifest.lock */,
+				9240CBFC1D2ED21300239B7E /* Sources */,
+				9240CBFD1D2ED21300239B7E /* Frameworks */,
+				9240CBFE1D2ED21300239B7E /* Headers */,
+				9240CBFF1D2ED21300239B7E /* Resources */,
+				3992DEC6D3FF3F6D4B2852B6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HabitKitFramework;
+			productName = HabitKitFramework;
+			productReference = 9240CC011D2ED21300239B7E /* HabitKitFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -148,6 +238,9 @@
 				ORGANIZATIONNAME = "Alexander Zimin";
 				TargetAttributes = {
 					9240CBD91D2EA32B00239B7E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					9240CC001D2ED21300239B7E = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -166,6 +259,7 @@
 			projectRoot = "";
 			targets = (
 				9240CBD91D2EA32B00239B7E /* HabitKit */,
+				9240CC001D2ED21300239B7E /* HabitKitFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -181,10 +275,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9240CBFF1D2ED21300239B7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08D4869B2D967E08E3566DA8 /* [CP] Check Pods Manifest.lock */ = {
+		27C9BD9D52434F94B4DEB108 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -199,22 +300,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		1326643FB791D39833B74B31 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabitKit/Pods-HabitKit-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A44568E3830E405EF22F13F7 /* [CP] Copy Pods Resources */ = {
+		2D663BF582A2FA2E97198E60 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -229,6 +315,51 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabitKit/Pods-HabitKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3992DEC6D3FF3F6D4B2852B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabitKitFramework/Pods-HabitKitFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96DC234D474A9342DEBBB05B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B371CD52AE6F59811B6777C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HabitKit/Pods-HabitKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -237,17 +368,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				9240CBE01D2EA32B00239B7E /* ViewController.swift in Sources */,
-				9240CBFB1D2EAC0000239B7E /* Collections+Extensions.swift in Sources */,
-				9240CBF11D2EA38500239B7E /* HabitRule.swift in Sources */,
-				9240CBF31D2EA79900239B7E /* ActionHabitRule.swift in Sources */,
-				9240CBF71D2EA86200239B7E /* ActionHabitRuleEntity.swift in Sources */,
-				9240CBF91D2EA9BF00239B7E /* Realm+Extensions.swift in Sources */,
 				9240CBDE1D2EA32B00239B7E /* AppDelegate.swift in Sources */,
-				9240CBF51D2EA7B900239B7E /* HabitKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9240CBFC1D2ED21300239B7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9240CC0F1D2ED23C00239B7E /* Realm+Extensions.swift in Sources */,
+				9240CC111D2ED23D00239B7E /* HabitKit.swift in Sources */,
+				9240CC121D2ED23D00239B7E /* HabitRule.swift in Sources */,
+				9240CC141D2ED23D00239B7E /* ActionHabitRuleEntity.swift in Sources */,
+				9240CC101D2ED23D00239B7E /* Collections+Extensions.swift in Sources */,
+				9240CC131D2ED23D00239B7E /* ActionHabitRule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9240CC071D2ED21300239B7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9240CC001D2ED21300239B7E /* HabitKitFramework */;
+			targetProxy = 9240CC061D2ED21300239B7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9240CBE11D2EA32B00239B7E /* Main.storyboard */ = {
@@ -354,9 +500,10 @@
 		};
 		9240CBED1D2EA32B00239B7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8352634073DFF81220D76C3 /* Pods-HabitKit.debug.xcconfig */;
+			baseConfigurationReference = 019A9BAEE9D92D623810D62B /* Pods-HabitKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HabitKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alex.HabitKit;
@@ -366,13 +513,56 @@
 		};
 		9240CBEE1D2EA32B00239B7E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAAE33FD67F198C5E7A0FFCB /* Pods-HabitKit.release.xcconfig */;
+			baseConfigurationReference = 8A046300A7FB81050834155D /* Pods-HabitKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HabitKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alex.HabitKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9240CC0A1D2ED21300239B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB8329AE98C4F8642BD6164 /* Pods-HabitKitFramework.debug.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HabitKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.HabitKitFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9240CC0B1D2ED21300239B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91723CA43D617A311AD70236 /* Pods-HabitKitFramework.release.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HabitKitFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alex.HabitKitFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -393,6 +583,15 @@
 			buildConfigurations = (
 				9240CBED1D2EA32B00239B7E /* Debug */,
 				9240CBEE1D2EA32B00239B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9240CC0C1D2ED21300239B7E /* Build configuration list for PBXNativeTarget "HabitKitFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9240CC0A1D2ED21300239B7E /* Debug */,
+				9240CC0B1D2ED21300239B7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal extension SequenceType {
+extension SequenceType {
   func group<U : Hashable>(@noescape keyFunc: Generator.Element -> U) -> [U:[Generator.Element]] {
     var dict: [U : [Generator.Element]] = [:]
     for el in self {
@@ -28,7 +28,7 @@ internal extension SequenceType {
   }
 }
 
-internal extension Dictionary {
+extension Dictionary {
   func sortedKeys(isOrderedBefore:(Key,Key) -> Bool) -> [Key] {
     return Array(self.keys).sort(isOrderedBefore)
   }

@@ -9,9 +9,9 @@
 import Foundation
 import RealmSwift
 
-internal class ActionHabitRuleEntity: Object {
+class ActionHabitRuleEntity: Object {
   dynamic var name: String = ""
-  let values = List<RealmInt>()
+  var values = List<RealmInt>()
   
   static func execute(name: String, value: Int) -> ActionHabitRuleEntity {
     let object = createOrFindEntity(name)
@@ -21,6 +21,15 @@ internal class ActionHabitRuleEntity: Object {
     }
     
     return object
+  }
+  
+  func cacheSizeCheck(size: Int) {
+    if values.count > size {
+      let value = values.removeFirst()
+      writeFunction({ 
+        realmDataBase.delete(value)
+      })
+    }
   }
   
   static func createOrFindEntity(name: String) -> ActionHabitRuleEntity {

@@ -10,11 +10,11 @@ import Foundation
 import RealmSwift
 import Realm
 
-internal var realmDataBase: Realm {
+var realmDataBase: Realm {
   return HabitKit.sharedInstance.realmDataBase
 }
 
-internal func writeFunction(block: (() -> Void)) {
+func writeFunction(block: (() -> Void)) {
   if realmDataBase.inWriteTransaction {
     block()
   } else {
@@ -24,9 +24,9 @@ internal func writeFunction(block: (() -> Void)) {
   }
 }
 
-internal extension Realm {
+extension Realm {
   func writeFunction(block: (() -> Void)) {
-    if realmDataBase.inWriteTransaction {
+    if self.inWriteTransaction {
       block()
     } else {
       do {
@@ -36,7 +36,7 @@ internal extension Realm {
   }
 }
 
-internal extension List where T: RealmInt {
+extension List where T: RealmInt {
   func toIntArray() -> [Int] {
     return self.map({ (value) -> Int in
       value.toInt()
@@ -44,11 +44,11 @@ internal extension List where T: RealmInt {
   }
 }
 
-internal protocol ObjectSingletone: class {
+protocol ObjectSingletone: class {
   init()
 }
 
-internal extension ObjectSingletone where Self: Object {
+extension ObjectSingletone where Self: Object {
   static var value: Self {
     let object = realmDataBase.objects(Self).first
     if let value = object {
@@ -70,7 +70,7 @@ internal extension ObjectSingletone where Self: Object {
 }
 
 
-internal extension Object {
+extension Object {
   func firstSave() -> Self {
     realmDataBase.writeFunction { () -> Void in
       realmDataBase.add(self)
@@ -79,25 +79,25 @@ internal extension Object {
   }
 }
 
-internal class RLMArraySwift<T: RLMObject> : RLMArray {
+class RLMArraySwift<T: RLMObject> : RLMArray {
   class func itemType() -> String {
     return "\(T.self)"
   }
 }
 
-internal extension Results {
+extension Results {
   func toArray() -> [T] {
     return self.map{$0}
   }
 }
 
-internal extension RealmSwift.List {
+extension RealmSwift.List {
   func toArray() -> [T] {
     return self.map{$0}
   }
 }
 
-internal class RealmInt: Object, IntegerLiteralConvertible {
+class RealmInt: Object, IntegerLiteralConvertible {
   dynamic var value: Int = 0
   
   func toInt() -> Int {
@@ -110,7 +110,7 @@ internal class RealmInt: Object, IntegerLiteralConvertible {
   }
 }
 
-internal extension Int {
+extension Int {
   func toRealmInt() -> RealmInt {
     let realmInt = RealmInt(integerLiteral: self)
     return realmInt.firstSave()
