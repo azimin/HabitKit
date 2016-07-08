@@ -14,14 +14,14 @@ class ViewController: UIViewController {
   @IBOutlet weak var segmentedControl: UISegmentedControl!
   var selectionHabit = ActionHabitRule(name: "SelectionHabit", defaultValue: 0)
   
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    segmentedControl.hk_addHabitWithName("Swag")
     
-    selectionHabit.numberOfExecutions = 2
+    //selectionHabit.numberOfExecutions = 2
     
-    segmentedControl.selectedSegmentIndex = selectionHabit.actionIndex
+    //segmentedControl.selectedSegmentIndex = selectionHabit.actionIndex
   }
 
   override func didReceiveMemoryWarning() {
@@ -30,7 +30,13 @@ class ViewController: UIViewController {
   }
 
   @IBAction func segmentedControlValueChanged(sender: UISegmentedControl) {
-    selectionHabit.executeActionIndex(sender.selectedSegmentIndex)
+    
+    // selectionHabit.executeActionIndex(sender.selectedSegmentIndex)
+  }
+  
+  override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    super.touchesEnded(touches, withEvent: event)
+    self.navigationController?.popViewControllerAnimated(true)
   }
 
 }

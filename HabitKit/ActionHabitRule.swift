@@ -11,7 +11,7 @@ import CoreGraphics
 
 public class ActionHabitRule: HabitRule {
   
-  public static var cacheSizeGlobal = 50
+  public static var cacheSizeGlobal = 10
   
   // Number of times must one value execute before selection
   public var numberOfExecutions = 1
@@ -57,12 +57,12 @@ public class ActionHabitRule: HabitRule {
   
   private var defaultValue: Int = 0
   
-  public init(name: String, defaultValue: Int) {
+  public init(name: String, defaultValue: Int = 0) {
     self.defaultValue = defaultValue
     super.init(name: name)
   }
   
-  public init(name: String, defaultValue: Bool) {
+  public init(name: String, defaultValue: Bool = false) {
     self.defaultValue = defaultValue ? 1 : 0
     super.init(name: name)
   }
